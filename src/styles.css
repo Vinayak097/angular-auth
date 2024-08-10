@@ -8,66 +8,19 @@ body {
     font-family: 'Arial', sans-serif;
   }
   
-  .auth-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+
   
-  .auth-left, .auth-right {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .auth-left {
-    background-color: #f0f4ff;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .auth-left img {
-    max-width: 80%;
-  }
-  
-  .auth-right {
-    background-color: white;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    padding: 40px;
-  }
-  
-  h2 {
+h2 {
     color: #333;
     margin-bottom: 20px;
-  }
+ }
   
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #666;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .primary-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+
+.side-container{
+  width: Hug (333px)px;
+height: Hug (308px)px;
+margin-left: 75px;
+  margin-right: 201px;
+
+
+}

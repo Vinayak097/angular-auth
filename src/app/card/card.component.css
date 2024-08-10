@@ -1,0 +1,68 @@
+
+.card{
+    width: 1051px;
+height: 604px;
+flex-shrink: 0;
+background: var(--WHITE, #F5F5F5);
+backdrop-filter: blur(5px);
+box-shadow: 0px 0px 12px 4px #0000001F;
+
+
+}
+.side1{
+    width: 442px;
+height: 604px;
+flex-shrink: 0;
+opacity: 0.12;
+background: var(--Primary-1-Old-Blue07, #1994FF);
+
+}
+.contianer{
+    width: Hug (333px)px;
+height: Hug (308px)px;
+top: 160px;
+left: 517px;
+gap: 24px;
+opacity: 0px;
+background-color: WHITE;
+
+}
+
+.logotext{
+    color: #001D86;
+font-family: Optima;
+font-size: 29.213px;
+font-style: normal;
+font-weight: 400;
+line-height: 29.213px; /* 100% */
+letter-spacing: 1.753px;
+text-transform: capitalize;
+width: 117.68px;
+height: 52px;
+padding-top: 25px;
+margin-left: 28px;
+gap: 0px;
+opacity: 0px;
+}
+.I{
+    color: #D7AD1A;
+font-family: Optima;
+font-size: 29.213px;
+font-style: normal;
+font-weight: 400;
+line-height: 29.213px;
+letter-spacing: 1.753px;
+text-transform: capitalize;
+}
+.dot{
+    width: 7.011px;
+height: 7.011px;
+flex-shrink: 0;
+fill: #D7AD1A;
+}
+.sym{
+    width: 28.581px;
+    height: 46.53px;
+    flex-shrink: 0;
+}
+

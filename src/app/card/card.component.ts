@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [],
+  imports: [LoginComponent],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
