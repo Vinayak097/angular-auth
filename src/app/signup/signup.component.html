@@ -1,18 +1,74 @@
-<div class="items-center h-full rounded-lg flex side-container">
-  <div class="flex justify-center welcome border h-fit flex-col gap-[24px]">
-    <h1 class="text-[#2D2D36]">Welcome Back, John!</h1>
+
+<div *ngIf="!success" class=" items-center h-full rounded-lg flex side-container">
+  <div *ngIf="form == 'form1'" class="flex justify-center welcome border h-fit flex-col gap-[24px]">
+    <h1 class="text-[#2D2D36] font-bold">Create Account</h1>
     <div>
       <label class="label">Enter Email ID</label><br>
-      <input type="text" [(ngModel)]="emailValue" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter full name">
+      <input type="text" [(ngModel)]="emailValue" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter email">
     </div>
-
-    <p>(OR)</p>
 
     <div>
       <label class="label">Enter Full name</label><br>
-      <input type="password" [(ngModel)]="fullname" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter full name">
+      <input type="text" [(ngModel)]="fullname" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter full name">
+    </div>
+    <div>
+      <label class="label">Create Password</label><br>
+      <input type="password" [(ngModel)]="password" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Create password">
     </div>
 
-    <button class="btn-next" (click)="formnext()">NEXT</button>
+    <button class="btn-next" (click)="changeForm('form2')">NEXT</button>
   </div>
+
+  <div *ngIf="form == 'form2'" class="flex justify-center border h-fit flex-col gap-[24px]">
+    
+    <div>
+      <button class="btn-back" (click)="changeForm('form1')"><fa-icon class="text-black" [icon]="['fas', 'arrow-left']"></fa-icon>back</button>
+
+    </div>
+    
+    <h1 class="text-[#2D2D36] font-bold">Create Account</h1>
+    <div>
+      <label class="label">Organisation Name</label><br>
+      <input type="text" [(ngModel)]="orgname" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter organisation name">
+    </div>
+    <div>
+      <label class="label">Organisation-id</label><br>
+      <input type="text" [(ngModel)]="organid" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter organisation name">
+    </div>
+    <div>
+      <label class="label">Designation</label><br>
+      <input type="text" [(ngModel)]="designation" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter organisation name">
+    </div>
+    <div class="cit-pin">
+      <div>
+        <label class="label">City</label><br>
+        <input type="text" [(ngModel)]="city" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter organisation name">
+      </div>
+      <div>
+        <label class="label">Pincode</label><br>
+        <input type="text" [(ngModel)]="pincode" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter organisation name">
+      </div>
+
+    </div>
+    <button class="btn-next" (click)="signup()">
+      Create</button>
+
+  </div>
+
+  
+
+
 </div>
+<div *ngIf="success" class="items-center h-full rounded-lg flex side-container justify-center text-center">
+
+  <div  class="text-center">
+    <div class="h-[204px]  w-[204px] bg-green-500 rounded-full mb-10 text-center">
+  d
+    </div>
+    <h1 class="mb-2">Welcom to Solve8!</h1>
+    <p>Rdirecting you to the Login screen. This might take  a few sconds...</p>
+  
+  </div>
+
+</div>
+

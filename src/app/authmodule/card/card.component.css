@@ -66,3 +66,35 @@ fill: #D7AD1A;
     flex-shrink: 0;
 }
 
+.label{
+    color: var(--Primary-1-Old-Blue08, #0069D1);
+  
+  /* p  minus bold */
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  }
+  
+  .btn-next{
+    display: flex;
+  width: 332px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: var(--Primary-1-Old-Blue08, #0069D1);
+  }
+  .input{
+    color: var(--ash, #767676);
+  
+  /* p  minus bold */
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.7;
+  }

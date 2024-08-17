@@ -1,0 +1,18 @@
+<div class="items-center h-full rounded-lg flex side-container">
+  <div class="flex justify-center welcome border h-fit flex-col gap-[24px]">
+    <h1 class="text-[#2D2D36]">Welcome </h1>
+    <div>
+      <label class="label">Enter Email ID</label><br>
+      <input type="text" [(ngModel)]="email" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter full name">
+    </div>
+
+    <p>(OR)</p>
+
+    <div>
+      <label class="label">Enter Mobile No.</label><br>
+      <input type="number" [(ngModel)]="phone" class="input w-full outline-none bg-[#E4ECEE] py-[13px] pl-[13px] rounded-full" placeholder="Enter full name">
+    </div>
+
+    <button class="btn-next" (click)="EmailorPhone()">NEXT</button>
+  </div>
+</div>
