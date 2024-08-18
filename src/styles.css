@@ -24,3 +24,20 @@ margin-left: 75px;
 
 
 }
+
+
+
+.error{
+  
+  font-family: "sans";
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color:   #DB3F27;
+ 
+}
+button{
+  color: white;
+}

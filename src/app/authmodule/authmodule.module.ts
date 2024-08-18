@@ -10,10 +10,10 @@ import { LoginComponent } from '../login/login.component';
   declarations: [ ],
   imports: [
     CommonModule,
-    FormsModule, // Necessary for ngModel
+    FormsModule, 
     AuthmoduleRoutingModule,
-     // Include LoginComponent if used within the module
-    CardComponent // Include CardComponent if used within the module
+   
+    CardComponent 
   ],
 })
 export class AuthmoduleModule { }
