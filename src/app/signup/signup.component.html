@@ -36,10 +36,10 @@
     </form>
     
 
-  <div *ngIf="form == 'form2'" class="flex justify-center border h-fit flex-col gap-[24px]">
+  <div *ngIf="form == 'form2'" class="flex justify-center  h-fit flex-col gap-[24px]">
     <div>
-      <button class="btn-back" (click)="changeForm('form1')">
-        <fa-icon class="text-black" [icon]="['fas', 'arrow-left']"></fa-icon>back
+      <button class="btn-back flex items-center gap-2 text-[#0069D1] " (click)="changeForm('form1')">
+        <img  class="mb-1" src="backi.svg" alt=""><span class=""> Go Back</span>
       </button>
     </div>
     

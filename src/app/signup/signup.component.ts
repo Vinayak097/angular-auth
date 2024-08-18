@@ -1,12 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { UserService } from '../user.service';
-
+export interface User {
+  name: string;
+  email: string;
+  password: string;
+  mobile_no: string;
+}
 @Component({
   selector: 'app-signup',
   standalone: true,
@@ -14,10 +19,13 @@ import { UserService } from '../user.service';
   styleUrls: ['./signup.component.css'],
   imports: [FormsModule, CommonModule, FontAwesomeModule]
 })
+
+
 export class SignupComponent implements OnInit {
+  
   emailValue: string = '';
   fullname: string = '';
-  password: string | null = null;
+  password: string = '';
   orgname: string = '';
   organid: string = '';
   pincode: number | null = null;
@@ -55,11 +63,11 @@ export class SignupComponent implements OnInit {
   }
 
   signup() {
-    const user = {
+    const user:User = {
       email: this.emailValue,
       password: this.password,
       name: this.fullname,
-      phone_no: this.mobile
+      mobile_no: this.mobile
     };
     this.userService.addUser(user);
     this.success = true;
